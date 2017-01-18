@@ -173,12 +173,24 @@
                   <form action="https://formspree.io/test@francisco.io" method="POST">
                     <p>$50 for 3 hours and 2 activities</p>
                     <fieldset>
-                      <p>Date:</p>
-                      <input id="datepicker" name="date" type="text" placeholder="Date of the tour" autocomplete="off">
+                      <p>Name:</p>
+                      <input name="name" required>
+                    </fieldset>
+                    <fieldset>
+                      <p>Email:</p>
+                      <input type="email" name="email" required>
                     </fieldset>
                     <fieldset>
                       <p>People:</p>
-                      <input type="number" name="people" value="1" step="1" min="1">
+                      <input type="number" name="people" value="1" step="1" min="1" required>
+                    </fieldset>
+                    <fieldset>
+                      <p>Date:</p>
+                      <input id="datepicker" name="date" type="text" placeholder="Date of the tour" autocomplete="off" required>
+                    </fieldset>
+                    <fieldset>
+                      <p>People:</p>
+                      <input type="number" name="people" value="1" step="1" min="1" required>
                     </fieldset>
                     <fieldset>
                       <p>Activities:</p>
